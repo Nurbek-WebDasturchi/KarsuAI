@@ -47,3 +47,10 @@
                     box.style.borderColor = "";
                 });
             });
+// Something code
+            document
+                .getElementById("click-btn")
+                .addEventListener("click", function () {
+                    const card = document.querySelector(".row-custom");
+                    card.classList.toggle("flipped");
+                });
