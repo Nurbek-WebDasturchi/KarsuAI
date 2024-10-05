@@ -6,16 +6,19 @@ body {
     position: fixed;
 }
 @media screen and (max-width: 575.9px) {
-    body {
-        border: 5px solid red;
-        width: 100% !important;
-    }
     .main-container {
         height: 100%;
-        background-image: url("./—Pngtree—ai\ robot\ innovation\ high-tech\ ppt_2443210.png");
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUsioZOUi3VfByCnucPqlS8LiGtDj-v3oA4w&s");
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: 100%;
         border: 2px solid;
+    }
+    nav {
+        background-color: #212121;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        margin-top: 0;
     }
     .container-cards {
         background-image: url("./8b9aa08f-3be4-4e99-a011-5405a101a956.jpg");
@@ -46,6 +49,10 @@ body {
         height: 100px;
         margin: 15px;
     }
+    .font {
+        color: rgb(58, 94, 251);
+        font-size: 20px !important;
+    }
     .main-info {
         font-weight: 900;
         font-size: 40px;
@@ -53,6 +60,9 @@ body {
         padding: 10px 5px;
         line-height: 1.12;
         color: bisque;
+    }
+    .account-icon__position {
+        margin-right: 30px;
     }
     .video-column {
         flex-direction: column;
@@ -121,6 +131,10 @@ body {
         height: 150px;
         margin: 15px;
     }
+    .font {
+        color: rgb(58, 94, 251);
+        font-size: 10px;
+    }
     .main-info {
         font-weight: 900;
         font-size: 60px;
@@ -182,9 +196,6 @@ body {
 .text-tittle,
 .font-size {
     color: rgb(230, 188, 188);
-}
-.font {
-    color: rgb(58, 94, 251);
 }
 .row-checkbox {
     width: 80%;
