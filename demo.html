@@ -16,201 +16,252 @@
     <body>
         <div class="container-fluid main-container">
             <div class="row d-flex justify-content-center h-100">
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <nav
                         class="d-flex justify-content-between p-2 align-items-center"
                     >
                         <div class="d-flex">
-                            <h1 class="font mx-5">KarsuAI-1.0</h1>
-                            <a
-                                href="#main"
-                                class="text-decoration-none text-light rounded p-2 mx-2"
-                                >Asosiy</a
-                            >
-                            <a
-                                href="https://www.ais-now.com/blog/top-office-technology-trends-2024"
-                                class="text-decoration-none text-light rounded p-2 mx-2"
-                                >Trendda
+                            <h1 class="font mx-md-5 d-flex align-items-center d-md-none mt-0">KarsuAI</h1>
+                            <h1 class="font mx-md-5 d-none d-md-block">KarsuAI-1.0</h1>
+                        </div>
+                        <div class="d-flex">
+                            <a class="text-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
                             </a>
-                            <a
-                                class="text-light text-decoration-none d-flex align-items-center p-2 mx-2 a-link"
-                                type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight"
+                            <div class="offcanvas offcanvas-top bg bg-dark" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title fs-1 fw-bold text-primary" id="offcanvasTopLabel">Menu</h5>
+                                    <button type="button" class="btn-close bg bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body d-flex flex-column justify-content-center bg">
+                                    <a
+                                        href="#main"
+                                        class="text-decoration-none text-dark rounded p-2 mx-2 a-link border border-dark w-100 m-1 bg bg-primary"
+                                        type="button"
+                                    >
+                                        Asosiy
+                                    </a>
+                                    <a
+                                        href="https://www.ais-now.com/blog/top-office-technology-trends-2024"
+                                        class="text-decoration-none text-dark rounded p-2 mx-2 a-link border border-dark w-100 m-1 bg bg-primary"
+                                        type="button"
+                                        >Trendda
+                                    </a>
+                                    <a
+                                        class="text-dark text-decoration-none d-flex align-items-center p-2 mx-2 a-link border border-dark w-100 rounded m-1 bg bg-primary"
+                                        type="button"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight"
+                                    >
+                                        Versiya
+                                    </a>
+                                </div> 
+                                <a
+                                    href="#main"
+                                    class="text-decoration-none text-light rounded p-2 mx-2 a-link d-none d-md-block"
+                                    type="button"
+                                    >Asosiy</a
+                                >
+                                <a
+                                    href="https://www.ais-now.com/blog/top-office-technology-trends-2024"
+                                    class="text-decoration-none text-light rounded p-2 mx-2 a-link d-none d-md-block"
+                                    type="button"
+                                    >Trendda
+                                </a>
+                                <a
+                                    class="text-light text-decoration-none d-none d-md-block align-items-center p-2 mx-2 a-link"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight"
                             >
                                 Dastur haqida
                             </a>
-                        </div>
-                        <div class="d-flex px-4">
-                            <button
-                                class="bg bg-primary rounded-circle d-flex justify-content-center align-items-center px-3 py-0"
-                                type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight"
-                                aria-controls="offcanvasRight"
-                            >
-                                <h2 class="text-light fw-bold fs-5 text-center">
-                                    J
-                                </h2>
-                            </button>
-
-                            <div
-                                class="offcanvas offcanvas-end"
-                                tabindex="-1"
-                                id="offcanvasRight"
-                                aria-labelledby="offcanvasRightLabel"
-                            >
+                            </div>
+                            <div class="d-flex px-4">
+                                <a class="text-primary account-icon__position d-md-none"                                 
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                      </svg>
+                                </a>
+                                <button
+                                    class="bg bg-primary rounded-circle d-none d-md-flex justify-content-center align-items-center px-3 py-0"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight"
+                                >
+                                    <h2 class="text-light fw-bold fs-5 text-center">
+                                        J
+                                    </h2>
+                                </button>
+    
                                 <div
-                                    class="offcanvas-header d-flex flex-column justify-content-between m-0 bg bg-dark"
+                                    class="offcanvas offcanvas-end"
+                                    tabindex="-1"
+                                    id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel"
                                 >
                                     <div
-                                        class="d-flex align-items-center justify-content-between"
+                                        class="offcanvas-header d-flex flex-column justify-content-between m-0 bg bg-dark"
                                     >
-                                        <a
-                                            type="button"
-                                            class="text-decoration-none mx-2"
-                                            data-bs-dismiss="offcanvas"
-                                            aria-label="Close"
+                                        <div
+                                            class="d-flex align-items-center justify-content-between"
                                         >
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="25"
-                                                height="25"
-                                                fill="currentColor"
-                                                class="bi bi-arrow-left-circle"
-                                                viewBox="0 0 16 16"
+                                            <a
+                                                type="button"
+                                                class="text-decoration-none mx-2"
+                                                data-bs-dismiss="offcanvas"
+                                                aria-label="Close"
                                             >
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
-                                                />
-                                            </svg>
-                                        </a>
-                                        <img
-                                            src="./Jahongir_logo.jpg"
-                                            alt="cdn"
-                                            class="img-fluid rounded-circle"
-                                        />
-                                        <div class="d-flex flex-column m-2">
-                                            <div
-                                                class="d-flex align-items-center"
-                                            >
-                                                <h5
-                                                    class="offcanvas-title text-light"
-                                                    id="offcanvasRightLabel"
-                                                >
-                                                    Jahongir Xudoyberganov
-                                                </h5>
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    width="16"
-                                                    height="16"
+                                                    width="25"
+                                                    height="25"
                                                     fill="currentColor"
-                                                    class="bi bi-check-circle-fill text-primary mx-2"
+                                                    class="bi bi-arrow-left-circle"
                                                     viewBox="0 0 16 16"
                                                 >
                                                     <path
-                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                                                        fill-rule="evenodd"
+                                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
                                                     />
                                                 </svg>
+                                            </a>
+                                            <img
+                                                src="./Jahongir_logo.jpg"
+                                                alt="cdn"
+                                                class="img-fluid rounded-circle"
+                                            />
+                                            <div class="d-flex flex-column m-2">
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <h5
+                                                        class="offcanvas-title text-light"
+                                                        id="offcanvasRightLabel"
+                                                    >
+                                                        Jahongir Xudoyberganov
+                                                    </h5>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        fill="currentColor"
+                                                        class="bi bi-check-circle-fill text-primary mx-2"
+                                                        viewBox="0 0 16 16"
+                                                    >
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                                <h5 class="text-primary">
+                                                    G'oya muallifi
+                                                </h5>
                                             </div>
-                                            <h5 class="text-primary">
-                                                G'oya muallifi
-                                            </h5>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="offcanvas-body p-0">
-                                    <ul class="list-group w-100 d-flex"></ul>
-                                        <li class="list-group-item p-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                                            </svg>
-                                            <a
-                                                href="#"
-                                                class="text-decoration-none"
-                                                >Profilim</a
+                                    <div class="offcanvas-body p-0">
+                                        <ul class="list-group w-100 d-flex"></ul>
+                                            <li class="list-group-item p-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                                </svg>
+                                                <a
+                                                    href="#"
+                                                    class="text-decoration-none"
+                                                    >Profilim</a
+                                                >
+                                            </li>
+                                            <li class="list-group-item p-2 d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
+                                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+                                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016"/>
+                                                </svg>
+                                                <a
+                                                    href="#"
+                                                    class="text-decoration-none"
+                                                    >Saytdagi seanslar</a
+                                                >
+                                            </li>
+                                            <li class="list-group-item p-2 d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                                                  </svg>
+                                                <a
+                                                    href="#"
+                                                    class="text-decoration-none"
+                                                    >Sozlamalar</a
+                                                >
+                                            </li>
+                                            <li class="list-group-item p-2 d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                                                    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+                                                </svg>
+                                                <a
+                                                    href="#"
+                                                    class="text-decoration-none"
+                                                    >Yangilanishlar</a
+                                                >
+                                            </li>
+                                            <li class="list-group-item p-2 d-flex">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left text-danger" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                                                    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                                                </svg>
+                                                <a
+                                                    href="#"
+                                                    class="text-decoration-none text-danger"
+                                                    >Chiqish</a
+                                                >
+                                            </li>
+                                        </ul>
+                                        <div
+                                            class="rounded border border-primary m-3 p-2"
+                                        >
+                                            <h4 class="mt-1">Dastur haqida</h4>
+                                            <h6>
+                                                Sayt
+                                                <span class="text-success"
+                                                    >7kun</span
+                                                >
+                                                davomoda yaratildi. Sayt hozirda
+                                                Github serverida faol holatda
+                                                ishlamoqda.Saytni har versiyasida
+                                                alohida funksiyalar qo'shiladi.
+                                            </h6>
+                                        </div>
+                                        <h6
+                                            class="border border-primary rounded p-4 m-3"
+                                        >
+                                            Dasturchi -
+                                            <span class="text-primary"
+                                                >Ahmedov Nurbek</span
                                             >
-                                        </li>
-                                        <li class="list-group-item p-2 d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-up-fill" viewBox="0 0 16 16">
-                                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
-                                                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016"/>
-                                            </svg>
-                                            <a
-                                                href="#"
-                                                class="text-decoration-none"
-                                                >Saytdagi seanslar</a
-                                            >
-                                        </li>
-                                        <li class="list-group-item p-2 d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
-                                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
-                                              </svg>
-                                            <a
-                                                href="#"
-                                                class="text-decoration-none"
-                                                >Sozlamalar</a
-                                            >
-                                        </li>
-                                        <li class="list-group-item p-2 d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
-                                                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
-                                            </svg>
-                                            <a
-                                                href="#"
-                                                class="text-decoration-none"
-                                                >Yangilanishlar</a
-                                            >
-                                        </li>
-                                        <li class="list-group-item p-2 d-flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left text-danger" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
-                                                <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
-                                            </svg>
-                                            <a
-                                                href="#"
-                                                class="text-decoration-none text-danger"
-                                                >Chiqish</a
-                                            >
-                                        </li>
-                                    </ul>
-                                    <div
-                                        class="rounded border border-primary m-3 p-2"
-                                    >
-                                        <h4 class="mt-1">Dastur haqida</h4>
-                                        <h6>
-                                            Sayt
-                                            <span class="text-success"
-                                                >7kun</span
-                                            >
-                                            davomoda yaratildi. Sayt hozirda
-                                            Github serverida faol holatda
-                                            ishlamoqda.Saytni har versiyasida
-                                            alohida funksiyalar qo'shiladi.
+                                            TATU 2-kurs, Frontend dasturchi.
                                         </h6>
                                     </div>
-                                    <h6
-                                        class="border border-primary rounded p-4 m-3"
-                                    >
-                                        Dasturchi -
-                                        <span class="text-primary"
-                                            >Ahmedov Nurbek</span
-                                        >
-                                        TATU 2-kurs, Frontend dasturchi.
-                                    </h6>
                                 </div>
+                                <!-- <a
+                                    href="#"
+                                    class="text-decoration-none fs-1 bg bg-light fw-bold text-dark rounded-circle border border-dark px-4"
+                                    >J</a
+                                > -->
                             </div>
-                            <!-- <a
-                                href="#"
-                                class="text-decoration-none fs-1 bg bg-light fw-bold text-dark rounded-circle border border-dark px-4"
-                                >J</a
-                            > -->
                         </div>
+
                     </nav>
                 </div>
 
@@ -222,7 +273,7 @@
                     ></audio>
                 </div>
 
-                <div class="col-12 py-5 d-flex justify-content-end p-0">
+                <div class="col-12 py-5 d-flex justify-content-end p-0 logo-bg__image">
                     <div class="row p-5 d-flex justify-content-end w-50">
                         <div class="col-4 p-0">
                             <img
@@ -261,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 offset-2">
+                <div class="col-12 col-md-6 offset-md-2 text-bg__image">
                     <h2 class="text-tittle">
                         Ommabop sun'iy intelektlar hozirda bepul, ammo ularning
                         imkoniyatlarini yaxshilash uchun
@@ -274,9 +325,9 @@
         <div class="container-fluid container-cards" id="main">
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <div id="carouselExample" class="carousel slide">
+                    <div id="carouselExample" class="carousel slide border border-danger">
                         <div class="carousel-inner">
-                            <div class="carousel-item active d-flex justify-content-center flex-column w-100">
+                            <div class="carousel-item active d-flex justify-content-center flex-column w-100 border border-success">
                                 <div
                                     class="row row-custom mt-5 d-flex justify-content-between flex-wrap offset-md-1"
                                 >
