@@ -6,6 +6,9 @@ body {
     position: fixed;
 }
 @media screen and (max-width: 575.9px) {
+    body {
+        background-color: #121234;
+    }
     .main-container {
         height: 100%;
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUsioZOUi3VfByCnucPqlS8LiGtDj-v3oA4w&s");
@@ -64,12 +67,38 @@ body {
     .account-icon__position {
         margin-right: 30px;
     }
+    .img-robot {
+        width: 40%;
+        height: 40%;
+        position: relative;
+        right: 0;
+        border: 2px solid red;
+    }
+    .row-robot {
+        position: relative;
+        right: 0;
+        width: 100%;
+    }
     .video-column {
         flex-direction: column;
     }
     .box img {
         width: 10px;
         height: 10px;
+    }
+    .row-logos {
+        width: 100%;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .row-logos .col-4 {
+        position: relative;
+        bottom: -170px;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+    .col-12-custom {
+        justify-content: center;
     }
 }
 @media screen and (min-width: 575.9px) {
@@ -151,6 +180,16 @@ body {
     .box img {
         width: 40px;
         height: 40px;
+    }
+    .row-logos {
+        width: 80%;
+        justify-content: end;
+    }
+    .row-robot {
+        justify-content: end;
+    }
+    .col-12-custom {
+        justify-content: end;
     }
 }
 .container-ais a:hover {
