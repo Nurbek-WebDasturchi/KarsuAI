@@ -8,6 +8,7 @@ body {
 @media screen and (max-width: 575.9px) {
     body {
         background-color: #121234;
+        overflow-x: hidden;
     }
     .main-container {
         height: 100%;
@@ -68,11 +69,11 @@ body {
         margin-right: 30px;
     }
     .img-robot {
-        width: 40%;
-        height: 40%;
+        width: 180px;
+        height: 180px;
         position: relative;
         right: 0;
-        border: 2px solid red;
+        margin-top: 20px;
     }
     .row-robot {
         position: relative;
@@ -82,6 +83,10 @@ body {
     .video-column {
         flex-direction: column;
     }
+    .text-bg__image {
+        background-color: #121234;
+        padding: 15px;
+    }
     .box img {
         width: 10px;
         height: 10px;
@@ -90,6 +95,13 @@ body {
         width: 100%;
         align-items: baseline;
         justify-content: center;
+    }
+    .row-custom {
+        justify-content: center;
+    }
+    .second-row {
+        position: relative;
+        top: -50px;
     }
     .row-logos .col-4 {
         position: relative;
@@ -149,6 +161,7 @@ body {
 
     .row-custom {
         width: 85%;
+        justify-content: space-between;
     }
     .btn-custom {
         position: relative;
