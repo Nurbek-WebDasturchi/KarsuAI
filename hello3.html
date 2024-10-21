@@ -13,28 +13,62 @@
         <link rel="icon" href="./wepik_14649076.png" />
         <style>
             body {
-                background-image: url("./19187761.jpg");
-                background-repeat: no-repeat;
-                background-size: 100%;
-            }
-            .font-size {
-                font-weight: 900;
-                font-size: 60px;
-                padding-left: 10px;
+                clear: both;
             }
             .text-color {
                 color: white;
+            }
+            @media screen and (max-width: 575.9px) {
+                body {
+                    background-color: #212121;
+                }
+                .text-primary {
+                    width: 100%;
+                    font-size: 10px;
+                }
+                .font-size {
+                    font-weight: 900;
+                    font-size: 50px;
+                }
+                .text-success {
+                    font-size: 15px;
+                }
+                .image {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            @media screen and (min-width: 576.1px) {
+                body {
+                    background-image: url("./19187761.jpg");
+                    background-repeat: repeat;
+                    background-size: 100%;
+                }
+                .font-size {
+                    font-weight: 900;
+                    font-size: 60px;
+                    padding-left: 10px;
+                }
             }
         </style>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 p-5 d-flex flex-column">
-                    <h1 class="font-size text-light">WEPIK</h1>
-                    <h2 class="fw-bold text-danger">
-                        O'zbek tilini qo'llab quvvatlamaydi!.
-                    </h2>
+                <div class="col-12 col-md-6 p-5 d-flex flex-column">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <h1 class="font-size text-light">WEPIK</h1>
+                            <h2 class="fw-bold text-danger fs-5">
+                                O'zbek tilini qo'llab quvvatlamaydi!.
+                            </h2>
+                        </div>
+                        <img
+                            src="./wepik_14649076.png"
+                            alt="slideImage"
+                            class="img-fluid image d-md-none"
+                        />
+                    </div>
                     <h5 class="fs-3 text-primary">
                         WEPIK — bu intuitiv grafik dizayn platformasi bo'lib,
                         foydalanuvchilarga turli xil vizuallarni yaratishda
@@ -45,21 +79,24 @@
                         mobil qurilmalarda ishlash imkoniyati va jamoaviy
                         ishlash vositalari kiradi. Ko'proq ma'lumot olish uchun
                         Wepikning
-                        <a
-                            href="https://wepik.com/"
-                            target="_blank"
-                            class="text-success"
-                            >rasmiy sayti</a
-                        >ga tashrif buyurishingiz mumkin.
                     </h5>
                     <a
                         href="https://wepik.com/ai-presentations"
-                        class="btn btn-primary p-3 m-1 fs-1 w-100"
+                        class="btn btn-primary p-3 m-2 fs-1 w-100"
                         target="_blank"
                         >Boshlash</a
                     >
+                    <!-- <h2 class="fw-bold text-success mt-3">
+                        Uning ustunliklari
+                    </h2>
+                    <h5 class="fs-3 text-primary">
+                        Uning boshqalarda ajralib turgan tomoni fikrlashida.
+                        ChatGPT-4o inson kabi fikrlay oladi.
+                    </h5> -->
                 </div>
-                <div class="col-6 d-flex flex-column justify-content-center">
+                <div
+                    class="col-6 d-none d-md-flex flex-column justify-content-center"
+                >
                     <img
                         src="./wepik_14649076.png"
                         alt="slideImage"
