@@ -11,51 +11,58 @@
             crossorigin="anonymous"
         />
         <style>
+            h1 {
+                font-size: 66px;
+            }
             ul {
                 padding-right: 0;
             }
             .video-image {
                 width: 40%;
             }
-            .main-video {
-                height: 80vh;
+            iframe,
+            .col-video,
+            .col-ul {
+                height: 75vh;
+                border-radius: 15px;
+            }
+            iframe {
+                width: 100%;
             }
             .container-fluid {
                 width: 95%;
             }
+            .logo {
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+            }
+            /* .row-ul .col-12 {
+                width: 95%;
+            } */
         </style>
     </head>
     <body class="bg bg-dark">
         <div class="container-fluid p-0">
-            <div class="row p-1">
-                <h1 class="fs-1 fw-bold text-light">KarsuAI Tutorial</h1>
-            </div>
-            <div class="row w-100">
-                <nav class="p-0">
-                    <ul class="d-flex border border-primary w-100">
-                        <a class="m-1 text-decoration-none">Ko'rilgan</a>
-                        <a class="m-1 text-decoration-none">Avvalgi</a>
-                        <a class="m-1 text-decoration-none">Yangi</a>
-                    </ul>
-                </nav>
+            <div class="row py-1 d-flex justify-content-start">
+                <div class="col-4 d-flex justify-content-start">
+                    <img
+                        src="https://files.oaiusercontent.com/file-M32JSrhaIWBwiLH0bY5wJ92L?se=2024-11-01T06%3A35%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dd98fdd5b-484d-4489-b20a-de24e09443b5.webp&sig=Rhs9gnXEOSDqg9W153MrOni100Tbu/nLIR7YEO0hTI4%3D"
+                        alt="Noutbuking buzuq!"
+                        class="logo"
+                    />
+                    <h3 class="fw-bold text-light m-2">KarsuAI Tutorial</h3>
+                </div>
             </div>
             <div class="row d-flex p-1 justify-content-between">
-                <div class="col-12 col-md-8 border border-danger rounded p-0">
-                    <video
-                        controls
-                        loop
-                        poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmzO0ZjyLyYJTWoDdl_Mo3teAO_dQfOEJYQ&s"
-                        class="w-100 main-video p-0"
-                    >
-                        <source src="./1-dars" />
-                    </video>
+                <div class="col-12 col-md-8 border border-danger p-0 col-video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcKybUTLKaU?si=xwBA6z1N7QW5y5Y1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="row">
-                        <div
-                            class="col-12 border border-danger p-0 m-2 rounded"
-                        >
-                            <a href="./video1" class="d-flex text-decoration-none" target="_blank">
+
+                <div class="col-12 col-md-4 col-ul">
+                    <div class="row row-ul px-2">
+                        <div class="col-12 border border-danger gy-2 rounded">
+                            <a href="#" class="d-flex text-decoration-none">
                                 <img
                                     src="data:image/jpeg;base64,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"
                                     alt="Hacked by Lunix!"
@@ -63,7 +70,7 @@
                                 />
                                 <div>
                                     <h3 class="d-inline-block text-light px-2">
-                                        1-DARS. Kirish va ChatGPT
+                                        1. Kirish
                                     </h3>
                                     <h6 class="px-2">Jahongir Xudoyberganov</h6>
                                     <p class="text-success px-2 mt-0">
@@ -72,25 +79,25 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 border border-danger p-0 m-2">
-                            <a href="./video2.html" class="d-flex text-decoration-none" target="_blank">
+                        <div class="col-12 border border-danger gy-2 rounded">
+                            <a href="#" class="d-flex text-decoration-none">
                                 <img
-                                    src="data:image/jpeg;base64,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"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWibJ3ah8d1j1hFgnzBwpppZ5qxGDSyjAzg&s"
                                     alt="Hacked by Lunix!"
                                     class="img-fluid video-image"
                                 />
                                 <div>
-                                    <h3 class="d-inline-block text-light">
-                                        2-DARS. ChatGPT 2-qism
+                                    <h3 class="d-inline-block text-light px-2">
+                                        1. Logo tayyorlash
                                     </h3>
                                     <h6 class="px-2">Jahongir Xudoyberganov</h6>
                                     <p class="text-success px-2 mt-0">
-                                        23.10.2024 da yuklangan
+                                        01.11.2024 da yuklangan
                                     </p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 border border-danger p-0 m-2">
+                        <div class="col-12 border border-danger gy-2 rounded">
                             <a href="#" class="d-flex text-decoration-none">
                                 <img
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWibJ3ah8d1j1hFgnzBwpppZ5qxGDSyjAzg&s"
@@ -98,21 +105,17 @@
                                     class="img-fluid video-image"
                                 />
                                 <div>
-                                    <h3 class="d-inline-block text-light">
-                                        3-DARS.
-                                        <span class="text-danger"
-                                            >Siz hali bu darsga
-                                            kelmagansiz!</span
-                                        >
+                                    <h3 class="d-inline-block text-light px-2">
+                                        3. Musiqa yaratish
                                     </h3>
-                                    <h6>
-                                        Saytda har darsda 1tadan videodarslik
-                                        yuklab boriladi
-                                    </h6>
+                                    <h6 class="px-2">Jahongir Xudoyberganov</h6>
+                                    <p class="text-success px-2 mt-0">
+                                        01.11.2024 da yuklangan
+                                    </p>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-12 border border-danger p-0 m-2">
+                        <div class="col-12 border border-danger">
                             <a href="#" class="d-flex text-decoration-none">
                                 <img
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWibJ3ah8d1j1hFgnzBwpppZ5qxGDSyjAzg&s"
@@ -120,21 +123,22 @@
                                     class="img-fluid video-image"
                                 />
                                 <div>
-                                    <h3 class="d-inline-block text-light">
-                                        4-DARS.
-                                        <span class="text-danger"
-                                            >Siz hali bu darsga
-                                            kelmagansiz!</span
-                                        >
+                                    <h3 class="d-inline-block text-light px-2">
+                                        4. Kiberxavfsizlik
                                     </h3>
-                                    <h6>
-                                        Saytda har darsda 1tadan videodarslik
-                                        yuklab boriladi
-                                    </h6>
+                                    <h6 class="px-2">Jahongir Xudoyberganov</h6>
+                                    <p class="text-success px-2 mt-0">
+                                        01.11.2024 da yuklangan
+                                    </p>
                                 </div>
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2 class="text-light fw-bold mt-2">
+                        1-Dars: Kirish va ChatGPT
+                    </h2>
                 </div>
             </div>
         </div>
