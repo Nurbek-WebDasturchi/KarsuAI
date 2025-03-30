@@ -28,3 +28,4 @@
                 const card = document.querySelector(".row-custom");
                 card.classList.toggle("flipped");
             });
+
